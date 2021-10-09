@@ -11,7 +11,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color:white;
 }
 
 .container {
@@ -50,8 +50,8 @@ body {
 
 .button-controls {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .hide {

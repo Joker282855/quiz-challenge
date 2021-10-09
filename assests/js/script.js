@@ -2,6 +2,8 @@ const startButton = document.getElementById('start-btn');
 const questions = document.getElementById('questions-container');
 const questionElement = document.getElementById('questions');
 const answersElement = document.getElementById('button-answers');
+const headerTitle = document.getElementById('fun');
+const pargraphDescription = document.getElementById('quiz');
 
 let shuffleQuestions, currentQuestionIndex
 
@@ -41,7 +43,7 @@ function clearQuesiton() {
 }
 
 function selectedAnswer() {
-
+    
 }
 
 const question = [

@@ -11,6 +11,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: blue;
 }
 
 .container {
@@ -30,5 +31,29 @@ body {
 }
 
 .btn {
-    
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.start-btn {
+    font-size: 1.5;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.button-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }

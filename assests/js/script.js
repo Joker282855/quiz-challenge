@@ -61,6 +61,19 @@ const question = [
             {text: "type startFunciton() again at the bottom of the file", correct: true},
             {text: "only type startFunction() at the top of the file", correct: false}
         ],
-        question: ""
+        question: "What command cause a message to appear in the top right of your computer",
+        answers: [
+            {text: "window.alert", correct: false},
+            {text: "window.log", correct: false},
+            {text: "window.prompt", correct: true},
+            {text: "window.window", correct: false}
+        ],
+        question: "What is a variable called when it is not inside a function",
+        answers: [
+            {text: "local variable", correct: false},
+            {text: "global variable", correct: true},
+            {text: "hidden variable", correct: false},
+            {text: "ran variable", correct: false}
+        ]
     }
 ]

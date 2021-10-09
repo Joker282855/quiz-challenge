@@ -16,6 +16,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+    clearQuesiton()
     questionShown(shuffleQuestions[currentQuestionIndex])
 }
 
@@ -23,7 +24,20 @@ function questionShown(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectedAnswer)
+        answersElement.appendChild(button)
     })
+};
+
+function clearQuesiton() {
+    while (answersElement.firstChild) [
+        answersElement.removeChild(answersElement.firstChild)
+    ]
 }
 
 function selectedAnswer() {

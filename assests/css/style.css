@@ -1,11 +1,10 @@
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #856f96;
+    background-color: blue;
     color: #eeebf0;
 }
 
-/* Header Section, view scores and timer */
 header {
     display: flex;
     width: 100%;
@@ -27,9 +26,10 @@ p {
     font-size: 20px;
 }
 
-/* End Header Section */
+.quizcode {
+    text-align: center;
+}
 
-/* Main Body Section, Start button, answer options buttons*/
 .content {
     justify-content: center;
     display: flex;
@@ -48,7 +48,7 @@ p {
     font-size: 20px;
 }
 
-.answers {
+.answer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +61,7 @@ p {
     background-color: #e6d8cc;
     border-radius: 10px;
     border: 4px #e6d8cc;
-    color: #6e5f53;
+    color:  black;
     text-align: center;
     font-size: 25px;
     padding: 20px;
@@ -78,7 +78,7 @@ p {
     background-color: #e6d8cc;
     border-radius: 10px;
     border: 4px #e6d8cc;
-    color: #6e5f53;
+    color: black;
     text-align: center;
     font-size: 25px;
     padding: 20px;
@@ -95,7 +95,7 @@ p {
     background-color: #e6d8cc;
     border-radius: 10px;
     border: 4px #e6d8cc;
-    color: #6e5f53;
+    color: black;
     text-align: center;
     font-size: 25px;
     padding: 20px;
@@ -107,17 +107,13 @@ p {
     background-color: #f0b689;
 }
 
-/* End main body section */ 
-
-
-.feedback {
+.response {
     display: inline-block;
     color: #e3deda;
     font-style: italic;
     font-size: 30px;
 }
 
-/* Final page score and initial input */
 .score-form {
     margin: 10px;
     padding: 5px;

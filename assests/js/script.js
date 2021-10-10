@@ -12,7 +12,7 @@ var responseA = function () {
     rightIncorrect.textContent = "Correct"
 };
 var responseB = function () {
-    rightIncorrect.textContent = "Incorrect!"
+    rightIncorrect.textContent = "Incorrect! You just lost a few seconds"
 };
 
 document.getElementById('start').onclick = function () {
@@ -45,7 +45,7 @@ document.getElementById('start').onclick = function () {
     var incorrectB = document.querySelector('.answer');
 
     incorrectB.addEventListener("click", function (event) {
-        if (event.target.classname === "choice-1") {
+        if (event.target.className === "choice-1") {
             console.log('response')
             timeLeft -= 10;
             responseB();
@@ -57,11 +57,11 @@ document.getElementById('start').onclick = function () {
         title.textContent = "How do you call a function in javascrpit:"
         answer.innerHTML = "<button id='correct2' class='choice'>helperFunction()</button>" +
                            "<br>" +
-                           "<button id='incorrect2' class='choice-1'>()</buton>" +
+                           "<button id='incorrect2' class='choice-1'>marine-core()</buton>" +
                            "<br>" +
-                           "<button id='incorrect2' class='choice-1'>/()</button>" +
+                           "<button id='incorrect2' class='choice-1'>helperFinder/()</button>" +
                            "<br>" +
-                           "<button id='incorrect2' class='choice-1'>main</button>" +
+                           "<button id='incorrect2' class='choice-1'>main{}</button>" +
                            "<br>";
 
         var correctB = document.querySelector('#correct2');
@@ -76,8 +76,9 @@ document.getElementById('start').onclick = function () {
                                "<br>" +
                                "<button id='correct3' class='choice-1'>console.log()</button>" +
                                "<br>" +
-                               "<button id='incorrect3' class='choice-1>.then()</button>" +
+                               "<button id='incorrect3' class='choice-1>res.status()</button>" +
                                "<br>";
+                               
             var correctB = document.querySelector('#correct3');
             console.log(correctB);
 
@@ -109,7 +110,7 @@ document.getElementById('start').onclick = function () {
                                       "<br>"; 
                     var correctD = document.querySelector('#correct5');
                     console.log(correctD);
-                    var incorrectA = docoument.querySelector('.choice-1');
+                    var incorrectA = document.querySelector('.choice-1');
                     console.log(incorrectA);
 
                     correctD.addEventListener("click", function () {

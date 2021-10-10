@@ -3,11 +3,22 @@ const questions = document.getElementById('questions-container');
 const questionElement = document.getElementById('questions');
 const answersElement = document.getElementById('button-answers');
 
-
-
-let shuffleQuestions, currentQuestionIndex
-
 startButton.addEventListener('click', startGame)
+
+const startingTime = 90;
+let time = startingTime * 60;
+
+const countdownEl = document.getElementById('timer-minutes')
+
+setInterval(minuteCountdown, 1000)
+
+function minuteCountdown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    countdownEl.innerHTML = `${minutes}: ${seconds}`;
+    time--;
+}
 
 function startGame() {
     startButton.classList.add('hide')

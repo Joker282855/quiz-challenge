@@ -9,30 +9,29 @@
     </head>
 
     <body>
-        <div class="container">
-            <div id="questions-container" class="hide">
-                <div id="questions">First Question</div>
-                <div id="button-answers" class="btn-layout">
-                    <button class="btn">Answer1</button>
-                    <button class="btn">Answer2</button>
-                    <button class="btn">Answer3</button>
-                    <button class="btn">answer4</button>
-                </div>
-                <div class="time">
-                    <div class="timer-text">Time Left</div>
-                    <div class="timer-minutes">90</div>
-                </div>
+        <header>
+            <div>
+                <a href = "./winnerbaord.html">View Your Score</a>
             </div>
-            <div id="run" class="button-controls">
-                <h1>Welcome To The Javascript Quiz</h1>
-                <p>This quiz contains eight questions that will question you on your basic knowledge about Javascript concepts.
-                   I hope that you enjoy this quiz and that you will feel like your knowledge of javascript improved after
-                   taking it.
-                </p>
-                <button id="start-btn" class="start-btn btn">Start</button>
+            <div>
+                <p id="time" class="timer"></p>
+            </div>
+        </header>
+
+        <div id="information" class="content">
+            <h1 id="quizcode">Javascript Quiz</h1>
+            <div id="questions">
+                Time to test your knowledge of Javascript tools and methods. If you answer incorrectly your time will be deducted form your score. Make sure you feel confident about your answeer.
+            </div>
+            <div id="answer" class="answer">
+                <button id="start">Start!</button>
+            </div>
+            <div id="response">
+
             </div>
         </div>
 
-        <script src="./assests/js/script.js"></script>
     </body>
+    <script src="./assests/js/script.js"></script>
+       
 </html>

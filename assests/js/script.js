@@ -12,10 +12,10 @@ var responseA = function () {
     rightIncorrect.textContent = "Correct"
 };
 var responseB = function () {
-    rightWrong.textContent = "Incorrect!"
+    rightIncorrect.textContent = "Incorrect!"
 };
 
-document.getElementsById('start').onclick = function () {
+document.getElementById('start').onclick = function () {
     var timerInterval = setInterval(function () {
       if (timeLeft > 0) {
           timeEl.textContent = 'Time: ' + timeLeft;
@@ -31,7 +31,7 @@ document.getElementsById('start').onclick = function () {
 
     questions.textContent = '';
     title.textContent = "Comonly used data types do NOT include:"
-                        "<button id='incorect1' class='choice-1'>Strings</button>" +
+    answer.innerHTML =  "<button id='incorect1' class='choice-1'>Strings</button>" +
                         "<br>" +
                         "<button id='incorrect1' class='choice-1'>Booleans</button>" +
                         "<br>" +
@@ -57,17 +57,17 @@ document.getElementsById('start').onclick = function () {
         title.textContent = "How do you call a function in javascrpit:"
         answer.innerHTML = "<button id='correct2' class='choice'>helperFunction()</button>" +
                            "<br>" +
-                           "<button id='incorrect2' class='chocie-1'>()</buton>" +
+                           "<button id='incorrect2' class='choice-1'>()</buton>" +
                            "<br>" +
                            "<button id='incorrect2' class='choice-1'>/()</button>" +
                            "<br>" +
                            "<button id='incorrect2' class='choice-1'>main</button>" +
                            "<br>";
 
-        var correctB = document.querySelector('#correctTwo');
+        var correctB = document.querySelector('#correct2');
         console.log(correctB)
 
-        document.getElementById('correctTwo').onclick = function () {
+        document.getElementById('correct2').onclick = function () {
             responseA()
             title.textContent = "What command logs information about a vairable."
             answer.innerHTML = "<button id='incorrect3' class='choice-1'>window.prompt()</button>" +

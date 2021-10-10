@@ -80,7 +80,7 @@ document.getElementsById('start').onclick = function () {
                                "<br>";
             var correctB = document.querySelector('#correct3');
             console.log(correctB);
-((
+
             document.getElementById('correct3').onclick = function () {
             responseA();
             title.textContent = "A useful tool used during development and debugging for printing content to the debugger is:"
@@ -98,13 +98,45 @@ document.getElementsById('start').onclick = function () {
 
                 document.getElementById('correct4').onclick = function () {
                     responseA();
-                    title.textContent = "What is a man"
-                }
+                    title.textContent = "What needs to be added to a button to make it do somehting when clicked"
+                    answer.innerHTML = "<button id='incorrect5' class='choice-1'>AppendChild</button>" +
+                                      "<br>" +
+                                      "<button id='incorrect5' class='choice-1'>createElement</button>" +
+                                      "<br>" +
+                                      "<button id='correct5' class='choice'>addEventListener</button>" +
+                                      "<br>" +
+                                      "<button id='incorrect5' class='choice-1'>findAll</button>" +
+                                      "<br>"; 
+                    var correctD = document.querySelector('#correct5');
+                    console.log(correctD);
+                    var incorrectA = docoument.querySelector('.choice-1');
+                    console.log(incorrectA);
+
+                    correctD.addEventListener("click", function () {
+                        title.textContent = "Your score is " + timeLeft + "! Enter Your Initials"
+                        rightIncorrect.textContent = ''
+                        clearInterval(timerInterval)
+                        answer.innerHTML = "<input id='initial' class='score' />" +
+                                           "<button id='input-score' class='choice'>Enter</button>";
+
+                        document.getElementById('input-score').onclick = function () {
+                            var initials = document.querySelector('#initial').value;
+                            console.log(initials);
+                            var tempObject = { initials, timeLeft }
+                            var highScores = JSON.parse(localStorage.getItem("High-Score")) || []
+                            highScores.push(tempObject);
+                            localStorage.setItem('High-Score', JSON.stringify(highScores))
+
+                            window.location.reload();
+                        }           
+                    });
+
+                };
             }
 
         }
 
     }
-
+}
 
 

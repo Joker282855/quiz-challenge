@@ -6,7 +6,7 @@ Coding Quiz
 *[Achievments](#achievements)
 *[Development](#development)
 *[Screenshot](#screenshot)
-*[Application](#applicaiton
+*[Application](#applicaiton)
 *[Credit](#credit)
 *[Contributors](#contributors)
 
@@ -27,6 +27,7 @@ The tools I used to develop this was reviewing module four and going over how to
 <img src="images/2021-10-10(1).png" />
 
 # Application: 
+<a href="https://joker282855.github.io/quiz-challenge/">Link to Application</a>
 
 # Credit:
 Again just giving credit to Jessica for all the help and guidance she gave me as I was coding up a whole new website from scratch

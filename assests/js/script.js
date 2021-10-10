@@ -1,119 +1,61 @@
-const startButton = document.getElementById('run');
-const questions = document.getElementById('questions-container');
-const questionElement = document.getElementById('questions');
-const answersElement = document.getElementById('button-answers');
+var centralContent = document.querySelector('#information');
+var questions = document.querySelector('#questions');""
+var title = document.querySelector('#quizcode');
+var answer = document.querySelector('#answer');
+var startBtn = document.querySelector('#start');
+var timeEl = document.querySelector('#time');
+var rightIncorrect = document.querySelector('#response');
+var timeLeft = 60;
 
-startButton.addEventListener('click', startGame)
+var responseA = function () {
 
-const startingTime = 90;
-let time = startingTime * 60;
-
-const countdownEl = document.getElementById('timer-minutes')
-
-setInterval(minuteCountdown, 1000)
-
-function minuteCountdown() {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-
-    countdownEl.innerHTML = `${minutes}: ${seconds}`;
-    time--;
-}
-
-function startGame() {
-    startButton.classList.add('hide')
-    shuffleQuestions = question.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questions.classList.remove('hide')
-    setNextQuestion()
-}
-
-function setNextQuestion() {
-    clearQuesiton()
-    questionShown(shuffleQuestions[currentQuestionIndex])
-}
-
-function questionShown(question) {
-    questionElement.innerText = question.question
-    question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
-        if (answer.correct) {
-            button.dataset.correct = answer.correct
-        }
-        button.addEventListener('click', selectedAnswer)
-        answersElement.appendChild(button)
-    })
+    rightIncorrect.textContent = "Correct"
+};
+var responseB = function () {
+    rightWrong.textContent = "Incorrect!"
 };
 
-function clearQuesiton() {
-    while (answersElement.firstChild) [
-        answersElement.removeChild(answersElement.firstChild)
-    ]
-}
+document.getElementsById('start').onclick = function () {
+    var timerInterval = setInterval(function () {
+      if (timeLeft > 0) {
+          timeEl.textContent = 'Time: ' + timeLeft;
+          timeLeft--;
+      } else { 
+        clearInterval(timerInterval)
+        title.textContent = 'Your Score is' + timeLeft + '! Enter Your Initials'
+        rightIncorrect.textContent = ''
+        answer.innerHTML = "<input id='score' class'score-form'/>" +
+                            "<button class='choice' onClick='window.location.reload();'>Enter</button>";
+      }
+    }, 1000);
 
-function selectedAnswer() {
-    
-}
+    questions.textContent = '';
+    title.textContent = "Comonly used data types do NOT include:"
+                        "<button id='incorect1' class='choice-1'>Strings</button>" +
+                        "<br>" +
+                        "<button id='incorrect1' class='choice-1'>Booleans</button>" +
+                        "<br>" +
+                        "<button id='correct1' class='choice'>Alerts</button>" +
+                        "<br>" +
+                        "<button id='incorrect1' class='choice-1'>Numbers</button>" +
+                        "<br>";
 
-const question = [
-    {
-        question: 'What is the getElementByIdMethod used for',
-        answers: [
-            {text: "To change the content of an html element", correct: false},
-            {text: "selects an html element/container", correct: true},
-            {text: "passes a value into another function", correct: false},
-            {text: "finds error in the text", correct: false}
-        ],
-        question: "What command logs informaiton in the console",
-        answers: [
-            {text: "console.log()", correct: true},
-            {text: "createElement", correct: false},
-            {text: "startWriting()", correct: false},
-            {text: "addClassList()", correct: false}
-        ],
-        question: "How do I add a child element to the parent element",
-        answers: [
-            {text: "appendchild()", correct: false},
-            {text: "makechild()", correct: false},
-            {test: "joinchild()", correct: false},
-            {test: "appendChild()", correct: true}
-        ],
-        question: "What does the method innerHtml do",
-        answers: [
-            {text: "renders html elements on the page", correct: false},
-            {text: "leaves the html text the same", correct:false},
-            {text: "sets or returns the html content of an element", corret: true},
-            {text: "switches places with an html tag", correct: false}
-        ],
-        quesiton: "How do you enclose an array",
-        answers: [
-            {text: "curly brackets", correct: false},
-            {text: "square brackets", correct: true},
-            {text: "forward slashes", correct: false},
-            {test: "backward slashes", correct: false}
-        ],
-        question: "How do we initiate startFunction() as a funciton in javascript",
-        answers: [
-            {text: "simply state the funciton at the top of the file", correct: false},
-            {text: "only type the command startFunciton()", correct: false},
-            {text: "type startFunciton() again at the bottom of the file", correct: true},
-            {text: "only type startFunction() at the top of the file", correct: false}
-        ],
-        question: "What command cause a message to appear in the top right of your computer",
-        answers: [
-            {text: "window.alert", correct: false},
-            {text: "window.log", correct: false},
-            {text: "window.prompt", correct: true},
-            {text: "window.window", correct: false}
-        ],
-        question: "What is a variable called when it is not inside a function",
-        answers: [
-            {text: "local variable", correct: false},
-            {text: "global variable", correct: true},
-            {text: "hidden variable", correct: false},
-            {text: "ran variable", correct: false}
-        ]
+    var correct1 =  document.querySelector('#correct1');
+    var incorrectB = document.querySelector('.answer');
+
+    incorrectB.addEventListener("click", function (event) {
+        if (event.target.classname === "choice-1") {
+            console.log('response')
+            timeLeft -= 10;
+            responseB();
+        }
+    });
+
+    document.getElementById('correct1').onclick = function () {
+        responseA();
+        title.textContent = "How do you call a function in javascrpit:"
+                            "<button"
     }
-]
+
+
+

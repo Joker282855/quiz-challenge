@@ -24,7 +24,7 @@ I was working on the assignment and running into snags untill 7:00 pm and then I
 The tools I used to develop this was reviewing module four and going over how to capture data with the click of a button. Again a huge part of my success was Jessica guiding me as I was coding up my new quiz website from scratch as we were meeting on zoom with the liveshare extension. Before meeting with Jessica I was able to create a website that got the person to the first question after starting the quiz.
 
 # Screenshot: 
-<img src="/assests/images/2021-10-10(1).png" />
+<img src="/assests/images/2021-10-10(1).png"></img>
 
 # Application: 
 <a href="https://joker282855.github.io/quiz-challenge/">Link to Application</a>

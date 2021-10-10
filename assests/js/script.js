@@ -55,17 +55,54 @@ document.getElementsById('start').onclick = function () {
     document.getElementById('correct1').onclick = function () {
         responseA();
         title.textContent = "How do you call a function in javascrpit:"
-        answer.innerHTML = "<button id='correctTwo' class='choice-2'>helperFunction()" +
+        answer.innerHTML = "<button id='correct2' class='choice'>helperFunction()</button>" +
                            "<br>" +
-                           "<button id='incorrectvase' class='chocie-in'>()" +
+                           "<button id='incorrect2' class='chocie-1'>()</buton>" +
                            "<br>" +
-                           "<button id='incorrectvase' class='choice-in'>/()" +
+                           "<button id='incorrect2' class='choice-1'>/()</button>" +
                            "<br>" +
-                           "<button id='incorrectvase' class='choice-in'>main" +
+                           "<button id='incorrect2' class='choice-1'>main</button>" +
                            "<br>";
 
         var correctB = document.querySelector('#correctTwo');
         console.log(correctB)
+
+        document.getElementById('correctTwo').onclick = function () {
+            responseA()
+            title.textContent = "What command logs information about a vairable."
+            answer.innerHTML = "<button id='incorrect3' class='choice-1'>window.prompt()</button>" +
+                               "<br>" +
+                               "<button id='incorrect3' class='choice-1'>window.alert()</button>" +
+                               "<br>" +
+                               "<button id='correct3' class='choice-1'>console.log()</button>" +
+                               "<br>" +
+                               "<button id='incorrect3' class='choice-1>.then()</button>" +
+                               "<br>";
+            var correctB = document.querySelector('#correct3');
+            console.log(correctB);
+((
+            document.getElementById('correct3').onclick = function () {
+            responseA();
+            title.textContent = "A useful tool used during development and debugging for printing content to the debugger is:"
+            answer.innerHTML = "<button id='incorrect4' class='choice-1'>Javascript</button>" +
+                               "<br>" +
+                               "<button id='correct4' class='choice'>Console.log</button>" +
+                               "<br>" +
+                               "<button id='incorrect4' class='choice-1'>Terminal/Bash</button>" +
+                               "<br>" +
+                               "<button id='incorrect4' class='choice-1'>For Loops</button>" +
+                               "<br>";
+
+                var correctC =document.querySelector('#correct4');
+                console.log(correctC);
+
+                document.getElementById('correct4').onclick = function () {
+                    responseA();
+                    title.textContent = "What is a man"
+                }
+            }
+
+        }
 
     }
 

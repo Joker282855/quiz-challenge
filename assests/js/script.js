@@ -41,6 +41,7 @@ document.getElementsById('start').onclick = function () {
                         "<br>";
 
     var correct1 =  document.querySelector('#correct1');
+    console.log(correct1)
     var incorrectB = document.querySelector('.answer');
 
     incorrectB.addEventListener("click", function (event) {
@@ -54,7 +55,18 @@ document.getElementsById('start').onclick = function () {
     document.getElementById('correct1').onclick = function () {
         responseA();
         title.textContent = "How do you call a function in javascrpit:"
-                            "<button"
+        answer.innerHTML = "<button id='correctTwo' class='choice-2'>helperFunction()" +
+                           "<br>" +
+                           "<button id='incorrectvase' class='chocie-in'>()" +
+                           "<br>" +
+                           "<button id='incorrectvase' class='choice-in'>/()" +
+                           "<br>" +
+                           "<button id='incorrectvase' class='choice-in'>main" +
+                           "<br>";
+
+        var correctB = document.querySelector('#correctTwo');
+        console.log(correctB)
+
     }
 
 

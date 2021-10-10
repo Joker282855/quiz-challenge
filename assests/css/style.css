@@ -11,7 +11,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color:white;
+    background-color: blue;
 }
 
 .container {
@@ -56,4 +56,8 @@ body {
 
 .hide {
     display: none;
+}
+
+.timer .timer-text {
+    user-select: none;
 }

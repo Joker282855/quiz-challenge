@@ -8,7 +8,7 @@ Coding Quiz
 *[Screenshot](#screenshot)
 *[Application](#applicaiton
 *[Credit](#credit)
-*[Contributor](#contributor)
+*[Contributors](#contributors)
 
 # Tasks:
 1. The tasks that I had to do for this challenge was to have a quiz begin with a timer when the start button was clicked
@@ -24,4 +24,13 @@ I was working on the assignment and running into snags untill 7:00 pm and then I
 The tools I used to develop this was reviewing module four and going over how to capture data with the click of a button. Again a huge part of my success was Jessica guiding me as I was coding up my new quiz website from scratch as we were meeting on zoom with the liveshare extension. Before meeting with Jessica I was able to create a website that got the person to the first question after starting the quiz
 
 # Screenshot: 
+<img src="images/2021-10-10(1).png" />
+
+# Application: 
+
+# Credit:
+Again just giving credit to Jessica for all the help and guidance she gave me as I was coding up a whole new website from scratch
+
+# Contributors: 
+Made with love by Josh Jackson with help/guidance from Jessica Hardisty
 

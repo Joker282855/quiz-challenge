@@ -17,8 +17,8 @@ Coding Quiz
 4. If all of the questions were answered or the time ran out then the game was over
 5. You can save your high score and your credentials at the end of the game
 
-# Achievemnets:
-I was working on the assignment and running into snags untill 7:00 pm and then I reached out to Jessica Hardisty to see if she could help me by meeting together on a zoom call. We meet together and did visual studio liveshare where Jessica basically coached me and guided me as a typed up a whole new quiz website from scratch. It is largely due to her guidance as I was coding up the whole new website from scratch that I was able to meet all of the above requirements. I was also able to look at some video tutorials before meeting with Jessica as well.
+# Achievements:
+I was working on the assignment and running into snags untill 7:00 pm and then I reached out to Jessica Hardisty to see if she could help me by meeting together on a zoom call. We meet together and did visual studio liveshare where Jessica basically coached me and guided me as a typed up a whole new quiz website from scratch. It is largely due to her guidance as I was coding up the whole new website from scratch that I was able to meet all of the above requirements. I was also able to look at some video tutorials before meeting with Jessica as well. 
 
 # Development:
 The tools I used to develop this was reviewing module four and going over how to capture data with the click of a button. Again a huge part of my success was Jessica guiding me as I was coding up my new quiz website from scratch as we were meeting on zoom with the liveshare extension. Before meeting with Jessica I was able to create a website that got the person to the first question after starting the quiz.
